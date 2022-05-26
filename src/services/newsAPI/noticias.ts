@@ -1,0 +1,2 @@
+import { newsApi } from "./config";
+

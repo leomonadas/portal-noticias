@@ -5,7 +5,8 @@ export const Container = styled.div`
     height: 300px;
     border-radius: 8px;
     padding: 5px;
-    background: #fff;
+    /* background: #fff; */
+    background-color: green;
     gap: 10px;
     width: 45%;
     img {
