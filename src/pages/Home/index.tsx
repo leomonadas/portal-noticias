@@ -1,4 +1,4 @@
-import { Wrapper } from "./styles";
+import { Wrapper, Background } from "./styles";
 import Header from "../../components/Header";
 import Card from "../../components/Card";
 import { getTopHeadlines } from "../../services/newsAPI/noticias";
@@ -25,21 +25,22 @@ function Home() {
     }, []);
 
     return (
-        <div>
+        <Background>
             <Header />
             <Wrapper> 
-                {articles.map((article) => {
+                {articles.map((article, index) => {
                     return (
                         <Card 
                         titulo={article.title} 
                         resumo={article.description} 
                         link={article.url}
                         image={article.urlToImage}
+                        key={index}
                         />
                     ); 
                 })}
             </Wrapper>
-        </div>
+        </Background>
     )
 }
 

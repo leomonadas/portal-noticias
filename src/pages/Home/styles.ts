@@ -11,3 +11,7 @@ export const Wrapper = styled.main`
     display: flex;
     flex-wrap: wrap;
 `;
+
+export const Background = styled.div`
+    background-color: #EED6C4;
+`
