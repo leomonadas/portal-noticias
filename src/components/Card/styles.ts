@@ -14,17 +14,24 @@ export const Container = styled.div`
         object-fit: cover;
         height: 270px;
         border-radius: 8px;
-        max-width: 180px;
+        max-width: 200px;
     }
-    div {
+    section{
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        flex-direction: column;   
+        justify-content: space-evenly ;
+        margin-bottom: 16px;
         gap: 40px;
-  }
+
+        div {
+        /* gap: 40px; */
+        }
+    }
 `;
 
-export const Titulo = styled.h4``;
+export const Titulo = styled.h4`
+    margin: 16px 0;
+`;
 
 export const Resumo = styled.p``;
 

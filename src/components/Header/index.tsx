@@ -1,4 +1,5 @@
-import { Container, Wrapper, Logo, Menu, Link } from "./styles";
+import { Container, Wrapper, Logo, Menu } from "./styles";
+import { Link } from "react-router-dom";
 
 function Header(){
     return(
@@ -6,7 +7,8 @@ function Header(){
             <Wrapper>
                 <Logo>Notícias</Logo>
                 <Menu>
-                    <Link>Home</Link>
+                <a href="."><Link to="/">Home</Link></a>
+                <a href="."><Link to="/tecnologia">Tecnologia</Link></a>
                 </Menu>
             </Wrapper>
         </Container>

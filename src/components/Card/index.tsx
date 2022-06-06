@@ -11,11 +11,13 @@ function Card({ titulo, image, resumo, link }: PropsCard){
     return(
         <Container>
             <img src={image} alt="" />
-            <div>
-                <Titulo>{titulo}</Titulo>
-                <Resumo>{resumo}</Resumo>
+            <section>
+                <div>
+                    <Titulo>{titulo}</Titulo>
+                    <Resumo>{resumo}</Resumo>
+                </div>
                 <BotaoNoticia href={link}>Ir para a notícia</BotaoNoticia>
-            </div>
+            </section>
         </Container>
     );
 }
